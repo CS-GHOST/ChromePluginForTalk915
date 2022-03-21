@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Layui</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="layui/css/layui.css"    media="all">
+  <style type="text/css">
+    .btn{margin-left: 20px;}
+    .txt{position: absolute; left:150px; top:25px;}
+    .msg{margin-top: 50px; margin-left: 200px; font-size: 30px;}
+  </style>
+</head>
+<body>
+    <div class="layui-btn-container" style="margin-top: 15px;">
+        <button id="doComment" class="layui-btn btn" test-active="test-form">提交评语</button>
+        <div class="txt">
+          <blockquote class="layui-elem-quote layui-text" style="padding: 0px;">
+             <span id="count"></span>
+          </blockquote>
+        </div>
+    </div>
+<table class="layui-hide" id="classTable"></table>
+<div class="msg"></div>
+              
+<script src="layui/layui.js" charset="utf-8"></script>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="comment.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>编辑模板</title>
+  <link rel="stylesheet" href="layui/css/layui.css">
+  <style type="text/css">
+    .input-w{width: 100%;margin-top: 10px;}
+    .txt{margin-left: 5px; margin-bottom: 5px;color:rgb(204, 209, 209);}
+  </style>
+</head>
+<body>
+<div class="layui-container">
+  <fieldset class="layui-elem-field layui-field-title" style="margin-top: 10px; margin-bottom: 5px;">
+    <legend>点击文本框选择评语，或直接输入</legend>
+  </fieldset>
+  <div class="layui-inline input-w">
+    <p class="txt">Pronunciation:</p>
+    <input name="" lay-verify="required" lay-reqtext="Pronunciation不能为空" placeholder="Pronunciation" autocomplete="off" class="layui-input comment" id="pronunciation">
+  </div></br>
+  <div class="layui-inline input-w">
+    <p class="txt">Vocabulary:</p>
+    <input name="" placeholder="Vocabulary" autocomplete="off" class="layui-input comment" id="vocabulary">
+  </div></br>
+  <div class="layui-inline input-w">
+    <p class="txt">Grammar Mistake and Correction:</p>
+    <input name="" placeholder="Grammar Mistake and Correction" autocomplete="off" class="layui-input comment" id="grammar">
+  </div></br>
+  <div class="layui-inline input-w">
+    <p class="txt">Suggestion:</p>
+    <input name="" placeholder="Suggestion" autocomplete="off" class="layui-input comment" id="suggestion">
+  </div>
+
+  <div class="layui-progress" style="margin: 15px 0 15px;">
+    <div class="layui-progress-bar" lay-percent="100%"></div>
+  </div>
+
+  <div class="layui-inline">
+    <input name="" placeholder="请输入评语模板名称" autocomplete="off" class="layui-input" id="tempName">
+  </div></br>
+
+  <div class="layui-btn-container" style="margin-top: 15px;">
+    <button id="saveTemplate" class="layui-btn" test-active="test-form">保存并使用模板</button>
+  </div>
+
+</div>
+<script src="layui/layui.js"></script>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="template.js"></script>
+</body>
+</html>
